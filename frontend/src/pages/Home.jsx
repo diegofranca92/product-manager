@@ -24,6 +24,8 @@ export default function Home() {
         }
       )
       console.log(response)
+      setName('')
+      setPrice(0)
     } catch (error) {
       alert(error)
     }
@@ -45,7 +47,7 @@ export default function Home() {
       }
     }
     loadProduts()
-  }, [])
+  }, [productList])
   return (
     <div className='w-screen'>
       <header className='flex justify-end mb-56 me-40'>
