@@ -1,4 +1,11 @@
 {
+  "name": "product-manager",
+  "version": "1.0.0",
   "private": true,
-  "workspaces": ["backend", "frontend"]
+  "license": "MIT",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev:client": "(yarn workspace @product-manager/frontend dev)",
+    "dev:server": "(yarn workspace @product-manager/backend dev)"
+  }
 }
